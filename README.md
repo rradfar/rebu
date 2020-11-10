@@ -1,6 +1,6 @@
 # REBU
 
-## A ride-sharing app ~~like~~ unlike any other!
+## A ride-sharing app ~~like~~ unlike any other! Visit [REBU](https://www.rebu.today/) today!
 
 ![Screenshot](assets/macbookpro15_front.png "MacBook Pro screenshot")
 
