@@ -37,13 +37,9 @@ body {
 }
 
 nav {
-  // background-color: $body-bg-color;
   display: flex;
-  // align-self: center;
   justify-content: space-between;
-  // align-content: center;
   width: 100%;
-  // height: 80px;
   padding: 0 $padding-screen-sm;
 
   @media screen and (min-width: $screen-md) {
@@ -181,7 +177,6 @@ nav {
   @media screen and (min-width: $screen-lg) {
     padding-left: $padding-screen-lg;
     display: flex;
-    // height: 300px;
     flex-flow: column wrap;
     justify-content: center;
     flex: 1;
@@ -252,11 +247,6 @@ nav {
 
 .hero-image-container {
   width: 100%;
-  // position: relative;
-  // display: block;
-  // vertical-align: top;
-  // background-size: contain;
-  // overflow: hidden;
 
   @media screen and (min-width: $screen-lg) {
     flex: 1;
@@ -297,12 +287,10 @@ nav {
   }
 
   .circle {
-    // background-color: rgba($secondary-bg-color, 0.5);
     background-color: #a011ff;
     display: block;
     border-radius: 50%;
     position: absolute !important;
-    // z-index: 2;
   }
 
   .circle-primary {
@@ -322,10 +310,6 @@ nav {
     height: 0;
     top: -160px;
     right: 30px;
-
-    @media screen and (min-width: $screen-md) {
-      // display: none;
-    }
 
     @media screen and (min-width: $screen-md) {
       height: 245px;
@@ -430,7 +414,6 @@ nav {
   margin-top: 40px;
 
   @media screen and (min-width: $screen-md) {
-    // display: block;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 20px;
@@ -467,7 +450,6 @@ nav {
 }
 
 .feature-copy {
-  // display: inline-block;
   h3 {
     color: $primary-text-color;
     font-size: 1.5rem;
@@ -606,7 +588,6 @@ nav {
   display: flex;
   flex-direction: column;
   margin-top: 0;
-  // margin: 0 auto;
   padding: 80px $padding-screen-sm 48px;
 
   @media screen and (min-width: $screen-md) {
@@ -664,15 +645,9 @@ nav {
     line-height: 2rem;
     font-weight: $weight-bold;
     margin: 0;
-
-    @media screen and (min-width: $screen-md) {
-      // font-size: 1.5rem;
-      // line-height: 2rem;
-    }
   }
 
   p {
-    // color: $secondary-text-color;
     color: #818391;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -691,7 +666,6 @@ nav {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  // flex: 1;
   text-align: center;
   padding: 0 $padding-screen-sm;
 
@@ -979,7 +953,6 @@ footer {
   text-align: center;
 
   @media screen and (min-width: $screen-lg) {
-    // flex-basis: 60%;
     order: 1;
     margin-top: 0;
     text-align: left;
