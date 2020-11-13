@@ -17,10 +17,10 @@
 
 <body>
   <nav>
-    <div class="nav-logo">
-      <a href="#"><img src="./assets/logo.png" alt=""></a>
+    <div class="nav-logo" role="img" aria-label="Company logo">
+      <a href="#"><img src="./assets/logo.png" alt="Logo"></a>
     </div>
-    <ul id="nav-menu-list" class="nav-menu-list">
+    <ul id="nav-menu-list" class="nav-menu-list" role="navigation">
       <li><a href="#">Ride</a></li>
       <li><a href="#">Drive</a></li>
       <li><a href="#">Fleet</a></li>
@@ -28,13 +28,13 @@
       <li><a href="#">Food</a></li>
       <li><a href="#">Cities</a></li>
     </ul>
-    <div class="menu-btn" id="menu-btn" onclick="onClickMenu()">
+    <div class="menu-btn" id="menu-btn" onclick="onClickMenu()" aria-label="menu">
       <div class="bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
     </div>
   </nav>
-  <div class="hero-wrapper">
+  <div class="hero-wrapper" role="banner">
     <div class="hero-copy-container">
       <h1>Everyday life, made simple.</h1>
       <p>Download the Rebu app</p>
@@ -50,9 +50,9 @@
       <div class="hero-image"></div>
     </div>
   </div>
-  <div class="drive-cta-wrapper">
+  <div class="drive-cta-wrapper" role="complementary">
     <div class="drive-cta-copy">
-      <h3>Want to be your own boss?</h3>
+      <h2>Want to be your own boss?</h2>
       <p>Become a driver and start earning!</p>
     </div>
     <div class="drive-cta-button">
@@ -61,7 +61,7 @@
     <div class="circle circle-primary"></div>
     <div class="circle circle-secondary"></div>
   </div>
-  <div class="features-wrapper">
+  <div class="features-wrapper" role="complementary">
     <div class="feature">
       <img src="./assets/feature-car.svg" alt="" class="feature-image">
       <div class="feature-copy">
@@ -89,11 +89,11 @@
     <div class="circle circle-primary"></div>
     <div class="circle circle-secondary"></div>
     <div class="phone-copy-container">
-      <h3>Get a ride in minutes!</h3>
+      <h2>Get a ride in minutes!</h2>
       <p>Pick your destination, request a ride, meet your driver, enjoy the journey.</p>
     </div>
   </div>
-  <div class="value-proposition-wrapper">
+  <div class="value-proposition-wrapper" role="complementary">
     <div class="value">
       <img src="./assets/value-car.svg" alt="" class="value-image">
       <div class="value-copy">
@@ -116,8 +116,8 @@
       </div>
     </div>
   </div>
-  <div class="signup-cta-wrapper">
-    <h1>Ready to ride?</h1>
+  <div class="signup-cta-wrapper" role="complementary">
+    <h2>Ready to ride?</h2>
     <div class="app-badge-container">
       <a class="app-badge app-badge-apple" href="#"><img src="./assets/app-badge-apple.svg"
           alt="Download app on Apple store" /></a>
@@ -126,7 +126,7 @@
     </div>
     <p>Or <a href="#">sign up</a> to start driving.</p>
   </div>
-  <div class="links-wrapper">
+  <div class="links-wrapper" role="contentinfo">
     <div class="links">
       <div class="logo"><img src="./assets/logo.png" alt="logo"></div>
       <div class="app-badge-container">
@@ -145,7 +145,7 @@
       </div>
     </div>
     <div class="product-links">
-      <h5>Our Products</h5>
+      <h4>Our Products</h4>
       <ul>
         <li><a href="#">Ride</a></li>
         <li><a href="#">Drive</a></li>
@@ -161,7 +161,7 @@
       </ul>
     </div>
     <div class="about-links">
-      <h5>About Us</h5>
+      <h4>About Us</h4>
       <ul>
         <li><a href="#">Cities</a></li>
         <li><a href="#">Green Plan</a></li>
