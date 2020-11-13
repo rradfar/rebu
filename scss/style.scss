@@ -272,7 +272,7 @@ nav {
 
 .drive-cta-wrapper {
   position: relative;
-  background-color: rgba($secondary-bg-color, 0.5);
+  background-color: $secondary-bg-color;
   overflow: hidden;
   padding: $padding-screen-sm;
   text-align: center;
@@ -463,7 +463,7 @@ nav {
   }
 
   p {
-    color: #818391;
+    color: $primary-text-color;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: $weight-normal;
@@ -546,7 +546,7 @@ nav {
   }
 
   p {
-    color: $secondary-text-color;
+    color: $primary-text-color;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: $weight-normal;
@@ -648,7 +648,7 @@ nav {
   }
 
   p {
-    color: #818391;
+    color: $primary-text-color;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: $weight-normal;
@@ -678,11 +678,10 @@ nav {
   }
 
   h1 {
-    color: #fff;
+    color: $primary-text-color;
     font-size: 2.125rem;
     line-height: 2.5rem;
     font-weight: $weight-bold;
-    text-shadow: 0.2px 0.2px rgba(0, 0, 0, 0.7);
     word-break: break-word;
     margin-top: 40px;
 
@@ -694,11 +693,10 @@ nav {
   }
 
   p {
-    color: #fff;
+    color: $primary-text-color;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: $weight-normal;
-    text-shadow: 0.1px 0.1px rgba(0, 0, 0, 0.5);
     margin-top: 16px;
     margin-bottom: 40px;
 
@@ -711,10 +709,11 @@ nav {
   }
 
   a {
-    color: #fff;
+    color: $primary-text-color;
+
     &:visited,
     &:active {
-      color: #fff;
+      color: $primary-text-color;
     }
   }
 
