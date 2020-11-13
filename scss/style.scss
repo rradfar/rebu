@@ -5,12 +5,13 @@ $screen-md: 768px;
 $screen-lg: 992px;
 
 // COLORS
-$body-bg-color: #f4f4f6;
-$primary-bg-color: #ffcf11;
-// $secondary-bg-color: #a011ff;
-$secondary-bg-color: #7b0dc3;
-$primary-text-color: #000;
-$secondary-text-color: #2f313f;
+$color-brand-primary: #ffcf11;
+$color-white-primary: #f4f4f6;
+$color-white-secondary: #ffffff;
+$color-black-primary: #000000;
+$color-black-secondary: #2f313f;
+$color-purple-primary: #a011ff;
+$color-purple-secondary: #7b0dc3;
 
 // FONTS
 $sans-serif: "Karla", sans-serif;
@@ -33,7 +34,7 @@ $padding-screen-lg: 6rem;
 
 body {
   font-family: $sans-serif;
-  background-color: $body-bg-color;
+  background-color: $color-white-primary;
 }
 
 nav {
@@ -89,7 +90,7 @@ nav {
   a {
     display: inline-block;
     padding: 26px 16px;
-    color: $secondary-text-color;
+    color: $color-black-secondary;
     text-decoration: none;
     height: 100%;
     border-left: 4px solid transparent;
@@ -100,11 +101,11 @@ nav {
   }
 
   a:hover {
-    border-left: 4px solid $primary-bg-color;
+    border-left: 4px solid $color-brand-primary;
 
     @media screen and (min-width: $screen-lg) {
       border-left: none;
-      background-color: rgba($secondary-text-color, 0.1);
+      background-color: rgba($color-black-secondary, 0.1);
     }
   }
 }
@@ -122,7 +123,7 @@ nav {
   }
 
   .bar {
-    background-color: $secondary-text-color;
+    background-color: $color-black-secondary;
     width: 100%;
     height: 5px;
     display: block;
@@ -165,7 +166,7 @@ nav {
 }
 
 .hero-copy-container {
-  background-color: $primary-bg-color;
+  background-color: $color-brand-primary;
   max-width: 1200px;
   height: auto;
   padding: $padding-screen-sm;
@@ -184,7 +185,7 @@ nav {
   }
 
   h1 {
-    color: $secondary-text-color;
+    color: $color-black-secondary;
     font-size: 3rem;
     line-height: 3.5rem;
     font-weight: $weight-bold;
@@ -199,7 +200,7 @@ nav {
   }
 
   p {
-    color: $secondary-text-color;
+    color: $color-black-secondary;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: $weight-normal;
@@ -272,7 +273,7 @@ nav {
 
 .drive-cta-wrapper {
   position: relative;
-  background-color: $secondary-bg-color;
+  background-color: $color-purple-secondary;
   overflow: hidden;
   padding: $padding-screen-sm;
   text-align: center;
@@ -282,12 +283,12 @@ nav {
   }
 
   @media screen and (min-width: $screen-lg) {
-    background-color: $secondary-bg-color;
+    background-color: $color-purple-secondary;
     padding: $padding-screen-lg;
   }
 
   .circle {
-    background-color: #a011ff;
+    background-color: $color-purple-primary;
     display: block;
     border-radius: 50%;
     position: absolute !important;
@@ -332,7 +333,7 @@ nav {
   }
 
   h2 {
-    color: #fff;
+    color: $color-white-secondary;
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: $weight-bold;
@@ -344,7 +345,7 @@ nav {
   }
 
   p {
-    color: #fff;
+    color: $color-white-secondary;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: $weight-normal;
@@ -361,20 +362,20 @@ nav {
 
 .drive-cta-button {
   position: relative;
-  background-color: #fff;
+  background-color: $color-white-secondary;
   display: inline-block;
   vertical-align: top;
   z-index: 1;
   margin-top: 8px;
   margin-bottom: 8px;
   border-radius: 100px;
-  box-shadow: 0 5px 12px rgba($secondary-text-color, 0.04),
-    0 2px 6px rgba($secondary-text-color, 0.06),
-    0 1px 2px rgba($secondary-text-color, 0.05);
+  box-shadow: 0 5px 12px rgba($color-black-secondary, 0.04),
+    0 2px 6px rgba($color-black-secondary, 0.06),
+    0 1px 2px rgba($color-black-secondary, 0.05);
 
   a {
     display: inline-block;
-    color: $secondary-text-color;
+    color: $color-black-secondary;
     font-size: 0.875rem;
     line-height: 1.25rem;
     letter-spacing: 0.1rem;
@@ -451,7 +452,7 @@ nav {
 
 .feature-copy {
   h3 {
-    color: $primary-text-color;
+    color: $color-black-primary;
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: $weight-bold;
@@ -463,7 +464,7 @@ nav {
   }
 
   p {
-    color: $primary-text-color;
+    color: $color-black-primary;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: $weight-normal;
@@ -482,7 +483,7 @@ nav {
 
   @media screen and (min-width: $screen-lg) {
     overflow-x: visible;
-    background-color: rgba($primary-bg-color, 0.5);
+    background-color: rgba($color-brand-primary, 0.5);
     margin-top: 236px;
     padding-top: 140px;
     padding-bottom: 175px;
@@ -490,7 +491,7 @@ nav {
   }
 
   .circle {
-    background-color: rgba($primary-bg-color, 0.5);
+    background-color: rgba($color-brand-primary, 0.5);
     display: block;
     border-radius: 50%;
     z-index: -1;
@@ -534,7 +535,7 @@ nav {
   }
 
   h2 {
-    color: $primary-text-color;
+    color: $color-black-primary;
     font-size: 2.125rem;
     line-height: 2.5rem;
     font-weight: $weight-bold;
@@ -546,7 +547,7 @@ nav {
   }
 
   p {
-    color: $primary-text-color;
+    color: $color-black-primary;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: $weight-normal;
@@ -630,7 +631,7 @@ nav {
     width: 48px;
     padding: 12px;
     border-radius: 40px;
-    background-color: rgba($primary-bg-color, 0.1);
+    background-color: rgba($color-brand-primary, 0.1);
     margin-right: 16px;
     @media screen and (min-width: $screen-md) {
       margin-right: 0;
@@ -640,7 +641,7 @@ nav {
 
 .value-copy {
   h3 {
-    color: $primary-text-color;
+    color: $color-black-primary;
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: $weight-bold;
@@ -648,7 +649,7 @@ nav {
   }
 
   p {
-    color: $primary-text-color;
+    color: $color-black-primary;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: $weight-normal;
@@ -662,7 +663,7 @@ nav {
 }
 
 .signup-cta-wrapper {
-  background-color: $primary-bg-color;
+  background-color: $color-brand-primary;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -678,7 +679,7 @@ nav {
   }
 
   h2 {
-    color: $primary-text-color;
+    color: $color-black-primary;
     font-size: 2.125rem;
     line-height: 2.5rem;
     font-weight: $weight-bold;
@@ -693,7 +694,7 @@ nav {
   }
 
   p {
-    color: $primary-text-color;
+    color: $color-black-primary;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: $weight-normal;
@@ -709,11 +710,11 @@ nav {
   }
 
   a {
-    color: $primary-text-color;
+    color: $color-black-primary;
 
     &:visited,
     &:active {
-      color: $primary-text-color;
+      color: $color-black-primary;
     }
   }
 
@@ -815,7 +816,7 @@ nav {
   }
 
   a {
-    color: $secondary-text-color;
+    color: $color-black-secondary;
     font-size: 1.25rem;
     line-height: 1.5rem;
     font-weight: $weight-bold;
@@ -835,7 +836,7 @@ nav {
   }
 
   a {
-    color: $secondary-text-color;
+    color: $color-black-secondary;
     font-size: 1.25rem;
     line-height: 1.5rem;
     font-weight: $weight-bold;
@@ -852,7 +853,7 @@ nav {
   }
 
   h4 {
-    color: $secondary-text-color;
+    color: $color-black-secondary;
     font-size: 1.25rem;
     line-height: 1.8rem;
     font-weight: $weight-bold;
@@ -865,7 +866,7 @@ nav {
   }
 
   a {
-    color: $secondary-text-color;
+    color: $color-black-secondary;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: $weight-normal;
@@ -873,7 +874,7 @@ nav {
 
     &:active,
     &:visited {
-      color: $secondary-text-color;
+      color: $color-black-secondary;
     }
   }
 }
@@ -887,7 +888,7 @@ nav {
   }
 
   h4 {
-    color: $secondary-text-color;
+    color: $color-black-secondary;
     font-size: 1.25rem;
     line-height: 1.8rem;
     font-weight: $weight-bold;
@@ -900,7 +901,7 @@ nav {
   }
 
   a {
-    color: $secondary-text-color;
+    color: $color-black-secondary;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: $weight-normal;
@@ -908,7 +909,7 @@ nav {
 
     &:active,
     &:visited {
-      color: $secondary-text-color;
+      color: $color-black-secondary;
     }
   }
 }
@@ -933,7 +934,7 @@ footer {
   }
 
   a {
-    color: $secondary-text-color;
+    color: $color-black-secondary;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: $weight-normal;
@@ -941,7 +942,7 @@ footer {
 
     &:active,
     &:visited {
-      color: $secondary-text-color;
+      color: $color-black-secondary;
     }
   }
 }
@@ -960,7 +961,7 @@ footer {
   span {
     display: block;
     margin-bottom: 24px;
-    color: $secondary-text-color;
+    color: $color-black-secondary;
 
     @media screen and (min-width: $screen-lg) {
       display: inline-block;
