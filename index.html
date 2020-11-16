@@ -10,14 +10,14 @@
   <meta property="og:image" content="https://www.rebu.today/assets/og-driver.jpg">
   <meta property="og:description"
     content="The smartest way to move around in cities. Forget expensive taxi rides or slow public transport. Get a ride in minutes. Download the Rebu app for iOS and Android.">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="mask-icon" href="./assets/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./assets/favicon.ico">
   <meta name="msapplication-TileColor" content="#ffc40d">
-  <meta name="msapplication-config" content="/browserconfig.xml">
+  <meta name="msapplication-config" content="./browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="./css/style.css">
   <title>Rebu Ride-sharing app</title>
@@ -194,15 +194,18 @@
     </div>
   </footer>
   <script src="./scripts/script.js"></script>
-  <script src="/upup.min.js"></script>
+  <script src="./upup.min.js"></script>
   <script>
     UpUp.start({
       'content-url': 'index.html',
       'assets': [
-        '/assets',
-        '/css/main.css',
-        '/scripts/scripts.js'
-      ]
+        './',
+        './index.html',
+        './assets/',
+        './css/style.css',
+        './scripts/script.js'
+      ],
+      'service-worker-url': './upup.sw.min.js'
     });
 
   </script>
